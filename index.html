@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Oasis Rent Car Monastir | Location de voitures premium</title>
+<meta name="description" content="Oasis Rent Car à Monastir – Location de voitures luxe et premium. Réservation rapide, service professionnel.">
+<meta name="robots" content="index, follow">
+
+<link rel="icon" href="1.png" type="image/png">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Oasis Rent Car Monastir">
+<meta property="og:description" content="Location de voitures luxe et premium à Monastir. Réservation facile et service professionnel.">
+<meta property="og:url" content="https://animated-frangipane-326d3b.netlify.app/">
+<meta property="og:image" content="https://animated-frangipane-326d3b.netlify.app/1.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Oasis Rent Car Monastir">
+<meta name="twitter:description" content="Location de voitures luxe et premium à Monastir. Réservation facile et service professionnel.">
+<meta name="twitter:image" content="https://animated-frangipane-326d3b.netlify.app/1.png">
+
+<!-- Structured Data (Schema.org / JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CarRental",
+  "name": "Oasis Rent Car",
+  "url": "https://animated-frangipane-326d3b.netlify.app/",
+  "logo": "https://animated-frangipane-326d3b.netlify.app/1.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Monastir",
+    "addressCountry": "TN"
+  },
+  "telephone": "+21673449709"
+}
+</script>
+
+</head>
+<style>
+:root{
+  --diamant:#9b59b6;
+  --black:#050505;
+  --glass:rgba(255,255,255,.06);
+  --green:#4caf50;
+  --red:#ff6b6b;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,Arial,sans-serif}
+body{background:var(--black);color:#fff;overflow-x:hidden;scroll-behavior:smooth}
+
+/* LOADER */
+#loader{position:fixed;inset:0;background:var(--black);display:flex;align-items:center;justify-content:center;z-index:9999;}
+#loader div{width:50px;height:50px;border:5px solid var(--diamant);border-top:5px solid transparent;border-radius:50%;animation:spin 1s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg);}}
+body.loaded #loader{display:none;}
+
+/* HEADER */
+header{position:fixed;top:0;width:100%;background:rgba(0,0,0,.6);backdrop-filter:blur(20px);padding:18px 22px;z-index:99;display:flex;justify-content:space-between;align-items:center;box-shadow:0 0 30px rgba(155,89,182,.5);border-bottom:1px solid rgba(155,89,182,.3);}
+header:hover{box-shadow:0 0 50px rgba(155,89,182,.8);}
+header .logo{color:var(--diamant);font-weight:900;letter-spacing:4px;font-size:22px;text-shadow:0 0 15px var(--diamant),0 0 30px rgba(155,89,182,.6);}
+nav a{margin-left:20px;color:#fff;text-decoration:none;font-weight:600;position:relative;transition:0.3s;}
+nav a::after{content:"";position:absolute;left:0;bottom:-5px;width:0;height:2px;background:var(--diamant);transition:0.4s;}
+nav a:hover::after{width:100%;}
+nav a:hover{color:var(--diamant);}
+
+/* HERO */
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)), url('7.jpg') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;flex-direction:column;position:relative;overflow:hidden;}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 20%, rgba(155,89,182,.2), transparent 40%),radial-gradient(circle at 70% 80%, rgba(155,89,182,.15), transparent 45%);animation:aura 20s infinite alternate;z-index:0;}
+@keyframes aura{to{transform:translate(120px,-80px) scale(1.1);}}
+.hero h1{font-size:50px;background:linear-gradient(90deg,#fff,var(--diamant),#fff);-webkit-background-clip:text;color:transparent;font-family:'Playfair Display',serif;text-shadow:0 0 40px rgba(155,89,182,.6),0 0 90px rgba(155,89,182,.4);position:relative;z-index:1;animation:shine 4s infinite linear;}
+@keyframes shine{0%{background-position:0%;}100%{background-position:200%;}}
+.hero p{margin-top:20px;opacity:.9;font-size:18px;z-index:1;position:relative;}
+.hero .btn-group{margin-top:30px;display:flex;gap:15px;flex-wrap:wrap;position:relative;z-index:1;}
+.hero a{padding:16px 45px;border-radius:60px;background:linear-gradient(135deg,var(--diamant),#f3e1ff);color:#000;font-weight:700;text-decoration:none;position:relative;overflow:hidden;box-shadow:0 0 15px rgba(155,89,182,.5),0 0 30px rgba(155,89,182,.3);transition:0.5s;}
+.hero a::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent,rgba(255,255,255,.6),transparent);transform:translateX(-100%);transition:.6s;}
+.hero a:hover::after{transform:translateX(100%);}
+.hero a:hover{transform:scale(1.08);}
+
+/* SECTIONS */
+section{padding:100px 18px;}
+h2{text-align:center;letter-spacing:5px;margin-bottom:40px;display:flex;justify-content:center;align-items:center;gap:15px;font-family:'Playfair Display',serif;}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:25px;}
+.gallery div{height:260px;border-radius:25px;background:#222 center/cover no-repeat;transition:transform 0.5s, box-shadow 0.5s;cursor:pointer;}
+.gallery div:hover{transform:scale(1.08);box-shadow:0 15px 25px rgba(155,89,182,.5);}
+.status-ferme{padding:8px 18px;border-radius:30px;font-weight:700;font-size:14px;border:1px solid rgba(255,107,107,.4);box-shadow:0 0 25px rgba(255,107,107,.25);transition:0.3s;}
+.card{background:var(--glass);backdrop-filter:blur(25px);border-radius:30px;padding:25px;margin:20px auto;max-width:500px;box-shadow:0 0 0 1px rgba(155,89,182,.4);opacity:0;transform:translateY(20px);transition:1s;}
+.card.visible{opacity:1;transform:translateY(0);}
+form input, form textarea, form button{width:100%;border:none;border-radius:18px;padding:15px;margin-top:10px;}
+form input, form textarea{background:#1a1a1a;color:white;}
+form button{background:linear-gradient(135deg,var(--diamant),#f3e1ff);font-weight:700;cursor:pointer;transition:0.3s;}
+form button:hover{transform:scale(1.05);}
+footer{text-align:center;padding:30px;font-size:13px;opacity:.7;display:flex;flex-direction:column;align-items:center;gap:20px;}
+footer a{color:var(--diamant);text-decoration:none;transition:0.3s; gap: 50px;}
+footer a:hover{text-decoration:underline;  gap: 35px;}
+@media(max-width:480px){.hero h1{font-size:38px}.hero p{font-size:15px}section{padding:90px 16px}}
+</style>
+</head>
+<body>
+  <h1>Oasis Rent Car à Monastirr</h1>
+  <p>Louez votre voiture facilement avec Oasis Rent Car à Monastir. Meilleur service et tarifs compétitifs.</p>
+  
+
+<div id="loader"><div></div></div>
+
+<header>
+  <div class="logo">Oasis Rent Car</div>
+  <nav>
+    <a href="#Coordonnees">Coordonnées</a>
+    <a href="#menu">Nos horaires</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>BIENVENU DANS OASIS RENT CAR</h1>
+  <p>Luxury & Premium Experience</p>
+  <div class="btn-group">
+    <a href="#Coordonnees">Coordonnées</a>
+    <a href="#menu">Nos horaires</a>
+    <a href="#contact">Contact</a>
+  </div>
+</section>
+
+<section id="Coordonnees">
+<h2>COORDONNEES</h2>
+<div class="card">
+  <p>📱 <a href="tel:+21673449709">216 73 44 97 09</a></p>
+  <p>✉️ <a href="mailto:oasis.rentcar@gmail.com">oasis.rentcar@gmail.com</a></p>
+  <p>📍 Monastir, Tunisie</p>
+</div>
+</section>
+
+<section id="menu">
+<h2>NOS HORAIRES D'OUVERTURE <span class="status-ferme">...</span></h2>
+<div class="card">LUNDI — 09H00 / 00H00</div>
+<div class="card">MARDI — 09H00 / 00H00</div>
+<div class="card">MERCREDI — 09H00 / 00H00</div>
+<div class="card">JEUDI — 09H00 / 00H00</div>
+<div class="card">VENDREDI — 09H00 / 00H00</div>
+<div class="card">SAMEDI — 09H00 / 00H00</div>
+<div class="card">DIMANCHE — 09H00 / 00H00</div>
+</section>
+
+<section id="gallery">
+<h2>GALLERY</h2>
+<div class="gallery">
+  <div style="background-image:url('2.jpg')"></div>
+  <div style="background-image:url('3.jpg')"></div>
+  <div style="background-image:url('4.jpg')"></div>
+  <div style="background-image:url('5.jpg')"></div>
+  <div style="background-image:url('6.jpg')"></div>
+</div>
+</section>
+
+<section id="contact">
+<h2>CONTACT</h2>
+<div class="card">
+<form action="https://formspree.io/f/xojangyr" method="POST">
+  <input type="text" name="name" placeholder="Nom" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <textarea name="message" rows="4" placeholder="Message" required></textarea>
+  <button type="submit">Envoyer</button>
+  <p id="successMessage" style="display:none;color:var(--diamant);font-weight:bold;margin-top:10px;">
+      ✅ Merci ! Votre message a été envoyé.
+  </p>
+</form>
+</div>
+</section>
+
+<footer>
+  © 2025 Oasis Rent Car — LEGENDARY EXPERIENCE _ @MONASTIR
+  <div style="margin-top:15px;">
+    <a href="https://maps.google.com/?daddr=35.7714447,10.8267422" target="_blank" style="color:#9b59b6; font-size:22px; text-decoration:none; text-shadow:0 0 15px #9b59b6,0 0 25px #9b59b6;">
+      <i class="fas fa-map-marker-alt"></i>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=100063468223769&locale=fr_FR" target="_blank" style="color:#9b59b6;font-size:22px;text-decoration:none;text-shadow:0 0 15px #9b59b6,0 0 25px #9b59b6;">
+      <i class="fab fa-facebook"></i>
+    </a>
+  </div>
+</footer>
+
+<script>
+window.addEventListener("load",()=>{document.body.classList.add("loaded")});
+const cards=document.querySelectorAll(".card");
+window.addEventListener("scroll",()=>{cards.forEach(c=>{if(c.getBoundingClientRect().top<window.innerHeight-50){c.classList.add("visible")}})});
+const status=document.querySelector(".status-ferme");
+function updateStatus(){
+  const now=new Date();
+  const hour=now.getHours();
+  if(hour>=9&&hour<24){
+    status.textContent="Ouvert";
+    status.style.color="var(--green)";
+  }else{
+    status.textContent="Fermé";
+    status.style.color="var(--red)";
+  }
+}
+updateStatus();
+setInterval(updateStatus,60000);
+document.querySelectorAll('nav a').forEach(link=>{link.addEventListener('click',e=>{e.preventDefault();document.querySelector(link.getAttribute('href')).scrollIntoView({behavior:'smooth'});});});
+const form=document.querySelector('form');
+form.addEventListener('submit',async e=>{
+  e.preventDefault();
+  const data=new FormData(form);
+  const response=await fetch(form.action,{method:'POST',body:data,headers:{'Accept':'application/json'}});
+  if(response.ok){alert('Message envoyé avec succès!');form.reset();}else{alert('Erreur, réessayez plus tard.');}
+});
+</script>
+</body>
+</html>
